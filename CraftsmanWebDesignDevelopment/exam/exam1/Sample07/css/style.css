@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0 auto;
+	padding:0;
+	list-style:none;
+	font-family:"맑은 고딕";
+	color:#333333
+}
+body{
+	width:1200px;
+	background-color:#ffffff;
+	font-size:20px;
+}
+a{
+	text-decoration:none;
+	display:block;
+}
+header{
+	height:100px; /*상단 높이*/
+	width:1200px; /*상단 너비*/
+	position:relative; 
+}
+.top{             /*logo와 menu 묶어줌*/
+	height:100px; /*상단 로고와 메뉴가 들어가는 곳 높이*/
+	width:1200px; /*상단 로고와 메뉴가 들어가는 곳 너비*/
+	position:absolute;
+}
+.logo{            /*로고 영역 스타일*/
+	float:left;
+	height:100px; /*로고 영역 높이*/
+	width:250px;  /*로고 영역 너비*/
+}
+.logo img{
+	float:left;
+	height:50px;
+	width:200px;
+	margin-top:25px;
+	margin-left:15px;
+}
+.menu{            /*메뉴 영역 스타일*/
+	float:right;
+	width:800px;  /*메뉴 영역 너비*/
+	position:absolute;
+	right:0px;
+	top:30px;
+	background-color:#ffffff; 
+	z-index:1; 	
+}
+.navi>li{
+	float:left;
+	width:200px;
+	background-color:#5e1742;
+}
+.navi>li>a{
+	line-height:40px; 
+	font-size:16px;	
+	font-weight:bold;
+	text-align:center;
+	color:#ffffff; 
+}
+.navi>li:hover{
+	background-color:#c9463d;  
+}
+.submenu{         
+	display:none;
+}
+.submenu>li{
+	width:200px;
+	background-color:#ffffff; 
+}
+.submenu>li>a{
+	line-height:35px; 
+	font-size:14px;	
+	font-weight:bold;
+	text-align:center;
+}
+.submenu>li:hover{ 
+	background-color:#c9463d;
+}
