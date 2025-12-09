@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마크업</title>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+  body{
+    font-size : 1.2em; /*16px=1em   em 상위 요소 기준 사이즈  rem rootem 문서기준 사이즈*/
+    font-family: "Sevillana", cursive;
+  }
+  
+header, section, footer {
+  width: 940px;
+  margin: 0 auto 10px;
+  background: gold;
+  /* border: 1px solid #333; */
+}
+
+header{
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  background: #000;
+}
+
+header .box{
+  width: 940px;
+  margin: auto;
+}
+
+header .box div {
+  float: left;
+}
+
+header .box div:first-child{
+  width: 300px;
+  background: moccasin;
+  line-height: 50px;
+  text-align: center;text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: darkblue;
+}
+
+.nav ul{
+  list-style: none;
+  /* margin: 0; */
+  /* padding: 0; */
+}
+
+.nav ul li{
+  width: 128px;
+  height: 50px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  background: lightcoral;
+  cursor: pointer; /*해당 칸에 마우스를 올리면 커서모양이 변경됨*/
+}
+
+.nav ul li:hover{  /*반응 선택자 - 해당 칸에 마우스를 올리면 반응함*/
+  background: olive;
+  color: aqua;
+}
+
+.nav ul li:nth-child(2n){
+  border-left: 0;
+  border-right: 0;
+}
+
+section{
+  overflow: hidden;
+  height: 420px;
+}
+
+section div{
+  width: 300px;
+  height: 400px;
+  float: left;
+  background: #fff;
+  line-height: 400px;
+  text-align: center;
+}
+
+section div:first-child{
+  margin: 10px;
+}
+
+section div:nth-child(2){
+  margin: 10px 10px 10px 0;
+}
+
+section div:nth-child(3){
+  margin: 10px 10px 10px 0;
+}
+
+footer{
+  font-family: "Nanum Pen Script", cursive;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background: #666;
+  color: #fff;
+}
+  
+</style>
+
+</body>
+</head>
+
+<body>
+  <header>
+    <div class="box">
+      <div class="logo">logo</div>
+      <div class="nav">
+      <ul>
+         <li>menu01</li>
+         <li>menu02</li>
+         <li>menu03</li>
+         <li>menu04</li>
+          <li>menu05</li>
+      </ul>
+    </div>
+</div>
+  </header>
+  <section>
+    <div class="left-box">left</div>
+    <div class="cebter-box">center</div>
+    <div class="right-box">right</div>
+  </section>
+  <footer>
+    관리자정보
+  </footer>
+</body>
+</html>

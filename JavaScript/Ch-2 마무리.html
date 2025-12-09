@@ -1,0 +1,40 @@
+<script>
+  // 프로그램(program = pro[미리] + gram [작성된 것]
+  // 입력 : prompt() inch 단위ㅣ 숫자
+  const input = Number( prompt('inch 단위의 숫자를 입력해주세요.'))
+  //처리 : 1inch → 2.54cm
+  const output = input * 2.54
+  //출력 : cm 단위의 숫자
+  alert(`${input}inch = ${output}cm입니다.`)
+</script>
+
+<script>
+  // 숫자를 입력받습니다.
+  const inputcm =Number(prompt('cm 단위의 숫자를 입력해주세요.'))
+  // 입력을 숫자로 변경하고 cm 단위로 변경합니다.
+  const outputcm = input * 0.393701
+  // 출력합니다.
+  alert(`${inputcm}cm = ${outputcm}inch입니다.`)
+</script>
+
+<script>
+// 숫자를 입력 받습니다.
+const rinput = Number(prompt('원의 반지름을 입력해주세요.'))
+const r = Number(rinput)
+// 출력합니다.
+let noutput = ''
+noutput += `원의 반지름 : ${r}\n`
+noutput += `원의 넓이 : ${3.14*r*r}\n`
+noutput += `원의 둘레 : ${2*3.01*r}`
+alert(noutput)
+</script>
+
+<script>
+  // 숫자를 입력 받습니다.
+const dollar = Number(prompt('달러 단위의 금액을 입력해주세요.'))
+  // 출력합니다.
+  let koutput = ''
+  koutput += `달러 : ${dollar}\n`
+  koutput += `원화 : ${dollar*1207}`
+  alert(koutput)
+</script>

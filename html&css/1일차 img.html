@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <!-- 
+    이미지 파일 형식 - 웹에서 jpeg, png, gif, svg 사용
+        jpeg 가장 많이 사용함. 인물사진, 풍경 등 
+            색상 정보가 많은 이미지에 사용. 압축형식이므로 파일 크기는 줄어들지만 이미지 퀄리티는 다소 줄어듬.
+
+        png 투명배경. 로고, 아이콘, 일러스트 이미지에 적함
+            무손실 압축으로 이미지 퀄리티 손실이 거의 없음.
+            색상 정보가 많은 사진을 png로 작업하면 파일크기가 커짐. (로딩이 오래걸림)
+            png24는 더 많은 색을 지원 (용량 고려), 일반적으로는 8을 많이 사용함
+
+        gif 색상 수가 최대 265개만 지원. 움짤, 로고, 아이콘 등
+            투명 배경이나 애니메이션을 위한 작은 용량 파일에 적합
+
+        svg 웹에서 사용하는 벡터 포맷 이미지. 애니메이션, 차트, 일러스트 이미지 등에 사용
+            벡터포맷이기 때문에 크기가 커져도 이미지 품질이 저하되지 않음.
+
+        -->
+
+    <h1>임시 이미지 사용</h1>
+        <img src="https://via.placeholder.com/200x100" alt="">
+        <img src="https://via.placeholder.com/400x100?text=header" alt="">
+        <img src="https://via.placeholder.com/200x100" alt=""><br>
+        <!-- src 소스 / 주소 (저 주소 많이 사용. 임시 이미지 사이트)-->
+        <img src="img/3.jpg" alt="카메라사진" width="300" height="200" title="툴팁">
+        <img src="img/6.jpg" alt="카메라사진" width="300" height="200" title="툴팁">
+        <!--alt""는 그림이 안나올때 보여주는 대체 텍스트 ★필수 / title""은 제목같이 붙여주는거-->
+
+    <!--
+        이미지 사용시 주의사항과 웹에서 이미지가 나오지 않을 때
+            - 웹에서 쓸 수 있는 이미지 확장자 확인
+            - .jpg .png .gif .svg 인지 확인
+               : 웹에서는 반드시 이름 영문 (영문+숫자 이용)
+                절대 한글 금지 (파일명도 상동)
+        웹에서 이미지가 나오지 않을 경우 확인
+            - 웹서버에 업로드
+            - 경로 이탈
+            - 한글 이름  
+               -->
+
+</body>
+
+</html>

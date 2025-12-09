@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .drop{
+            border: 1px solid red;
+            width: 200px;
+        }
+        
+        .drop-btn{
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            background: gold;
+            color: red;
+            cursor: pointer;
+        }
+        
+        .drop-submenu{
+            display: none;
+            width: 200px;
+        }
+        
+        .drop-submenu a{
+            display: block;
+            text-align: center;
+            padding: 5px 0;
+        }
+        
+        .drop-submenu a:hover{
+            background: #ccc;
+            color: red;
+        }
+
+        .drop:hover .drop-submenu{
+            display: block;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="drop">
+        <div class="drop-btn">MENU</div>
+            <div class="drop-submenu">
+                <a href="#">menu1</a>
+                <a href="#">menu2</a>
+                <a href="#">menu3</a>
+                <a href="#">menu4</a>
+                <a href="#">menu5</a>
+                <a href="#">menu6</a>
+                <a href="#">menu7</a>
+            </div>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #con{
+      width: 800px;
+      height: 200px;
+      margin: 50px auto;
+    }
+
+    .box1{
+      width: 100px;
+      height: 100px;
+      border: 1px solid #333;
+      float: left;
+      margin: 40px;
+      text-align: center;
+      line-height: 100px;
+    }
+    
+    img{
+      width: 100px;
+      height: 100px;
+    }
+
+    .box1>div{
+      width: 100px;
+      height: 100px;
+      transition: all 0.5s;
+    }
+
+    .rotatex:hover{
+      transform: rotateX(50deg);
+    }
+
+    #pers{ /*원근감*/
+      perspective: 300px;
+    }
+
+    /*
+    원근감 추가
+      perspective 값은 0보다 커야함.
+      픽셀 값이 클수록 멀어짐.
+      변형하는 요소가 아니라 변형하는 요소의 부모 요소에 정의해야함.
+    */
+
+</style>
+
+</head>
+<body>
+  <id class="con">
+    <div class="box1">
+      <img src="img/3.jpg" alt="">
+    </div>
+    <div class="box1">
+      <div class="rotatex">
+        <img src="img/5.jpg" alt="">
+      </div>
+    </div>
+    <div class="box1" id="pers">
+      <div class="rotatex">
+        <img src="img/8.jpg" alt="">
+    </div>
+  </id>  
+</body>
+</html>

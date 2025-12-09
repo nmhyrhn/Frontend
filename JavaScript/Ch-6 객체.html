@@ -1,0 +1,87 @@
+<script>
+  // Ppower() 메소드 추가
+  Number.prototype.power = function (n = 2) {
+    return this.valueOf() ** n
+  }
+
+  // Number 객체의 power() 메소드를 사용
+  const a = 12
+  console.log('a.power():', a.power())
+  console.log('a.power(3):', a.power(3))
+  console.log('a.power(4):', a.power(4))
+</script>
+
+<script>
+  new Number(10)
+  new String('안녕하세요')
+  new Boolean(true)
+</script>
+
+<script>
+  /// 화살표 함수를 사용한 메소드
+  // 변수
+  const test = {
+    a: function (){
+      console.log (this)
+    },
+    b: () => {
+      console.log(this)
+    }
+  }
+
+  // 메소드 호출
+  test.a()
+  test.b()
+
+  /// 실행결과 확인하기 
+</script>
+
+<script>
+  /// 동적으로 객체 속성 추가/제거
+  ///추가
+  // 객체 선언
+  const student = {}
+  student.이름 = '윤인성'
+  student.취미 = '악기'
+  student.장래희망 = '생명공학자'
+
+  // 출력
+  console.log(JSON.stringify(student, null, 2))
+  // 메소드 종류 알아보기
+
+  /// 제거
+  // 객체 선언
+  const student = {}
+  student.이름 = '윤인성'
+  student.취미 = '악기'
+  student.장래희망 = '생명공학자'
+
+  // 객체 속성 제거
+  delete student.장래희망
+
+  // 출력
+  console.log(JSON.stringify(student, null, 2))
+</script>
+
+<script>
+  /// 메소드 내부에서 this 키워드 사용
+  // 변수 선언
+  const pet = {
+    name : '구름',
+    eat : function (food) {
+      alert(this.name + '은/는' + food + '을/를 먹습니다.')
+    }
+  }
+
+  // 메소드 호출
+  pet.eat('밥')
+</script>
+
+<script>
+  const product = {
+    제품명 : '7D 건조 망고',
+    유형 : '당절임',
+    성분 : '망고, 설탕, 메타중아황산나트륨, 치자황색소',
+    원산지 : '필리핀'
+  }
+</script>

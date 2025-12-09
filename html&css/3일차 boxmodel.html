@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      
+    }  
+    .box1{
+      width: 100px;
+      height: 100px;
+      background: pink;
+      text-align: center;
+      line-height: 80px;
+      /*
+      inlie  문장에서 문장과 문장사이 높이로 행간의 높이를 지정할 때
+      block 불럭레벨요소에서  그안에서 위치한 단어, 
+      또는 한 문장들은 행간(lineheight)높이값에 height값
+      사용하여 바로 수직에서 중앙으로 정렬(세로정렬)
+      */
+      color: blue;
+      text-transform: uppercase;
+      border: 10px solid green;/*컨텐츠 밖의 테두리 생성/웹이 표준화 되면서 박스모델시 많이 사용*/
+      box-sizing: border-box; /*켄텐츠 안의 테두리 생성 illine*/
+      /*
+      border는 div 레이아웃 설계시 사용자가 지정한 div 넓이값 안에 포함
+      border의 수치를 적용한 만큼 div 전체 넓이값 안에 포함
+
+      box-sizing: border-box; 석상이 안쪽 테두리로 생성을 시켜 
+      width:100px; height:100px;유지
+
+     border
+     1. border-top : 적용값;   
+     2. border-right : 적용값;   
+     3. border-bottom : 적용값;   
+     4. border-left : 적용값;   
+     
+     border: 10px solid green;
+     두께  선종류  색상  
+     solid 실선 dashed 점선
+     
+     */
+     margin-bottom: 10px; 
+     /*
+     margin 바깞여백. 개별 지정 가능
+     
+      1. margin-top : 적용값;   
+      2. margin-right : 적용값;   
+      3. margin-bottom : 적용값;   
+      4. margin-left : 적용값; 
+      색 지정 안됨
+      
+      padding 안 여백. 개별 지정 가능
+      1. padding-top : 적용값;   
+      2. padding-right : 적용값;   
+      3. padding-bottom : 적용값;   
+      4. padding-left : 적용값; 
+      
+  
+      */  
+    } 
+    .box2{
+      width: 100px;
+      height: 100px;
+      background: yellow;
+      text-align: center;
+      line-height: 100px;
+      color: violet;
+      text-transform: uppercase;
+      /* border: 10px solid mediumspringgreen; */
+    } 
+
+  </style>
+</head>
+<body>
+  <div class="box1">box1</div><!--한줄 전체(블럭레벨요소 성질)-->
+  <div class="box2">box2</div>
+  <!--
+  웹사이트 기획시 레이아웃 설계할 때 사용하는 태그
+  대표적인 "블럭레벨요소(상자)"
+  -->
+</body>
+</html>

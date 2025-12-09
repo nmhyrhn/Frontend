@@ -1,0 +1,57 @@
+<script>
+  // 자, 축, 인, 묘, 진, 사, 오, 미, 신, 유, 술, 해 → 띠
+  // 갑, 을, 병, 정, 무, 기, 경, 신, 임, 계 → 태어난 해
+  // 연도를 10으로 나눈 나머지가 경, 신, 임, 계, 갑 ~
+  // 이 둘을 합쳐 출력하는 프로그램 생성 
+  const rawwInout = prompt('태어난 해를 입력해주세요.','')
+  const year = Number(rawwInout)
+
+  let 간
+  if (입력 === 0)  { alert('신') }
+    else if (입력 === 1)  { alert('유') }
+    else if (입력 === 2)  { alert('술') }
+    else if (입력 === 3)  { alert('해') }
+    else if (입력 === 4)  { alert('자') }
+    else if (입력 === 5)  { alert('축') }
+    else if (입력 === 6)  { alert('인') }
+    else if (입력 === 7)  { alert('묘') }
+    else if (입력 === 8)  { alert('진') }
+    else if (입력 === 9)  { alert('사') }
+    else if (입력 === 10) { alert('오') }
+    else if (입력 === 11) { alert('미') }
+
+  let 띠
+
+  alert(`${year}년은 ${간}${띠} 년 입니다.`)
+</script>
+
+<script>
+  //태어난 연도를 입력받아 띠 출력하기 if조건문을 switch조건문으로 변경 구현
+  const rawInput = prompt('태어난 해를 입력해주세요.','')
+  const year = Number(rawInput)
+  const e = year % 12 
+
+  let result
+  switch (e) {
+    case 0:  result = '원숭이'; break
+    case 1:  result = '닭'; break
+    case 2:  result = '개'; break
+    case 3:  result = '돼지';  break
+    case 4:  result = '쥐';  break
+    case 5:  result = '소';  break
+    case 6:  result = '호랑이'; break
+    case 7:  result = '토끼'; break
+    case 8:  result = '용'; break
+    case 9:  result = '뱀'; break
+    case 10:  result = '말'; break
+    case 11:  result = '양'; break
+  }
+  alert(`${year}년에 태어났으면 ${result} 띠입니다.`)
+</script>
+
+<script>
+  const result = (100 > 200)
+  /*true*/ ? prompt('값을 입력해주세요.','')
+  /*false*/ : confirm('버튼을 클릭해주세요.')
+  alert(result)
+</script>

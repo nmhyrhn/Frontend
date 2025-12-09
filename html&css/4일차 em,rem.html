@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+  p{font-size: 5em;} /*1em=16px 1rem=16px  5rem=80px*/
+  span{font-size: 5rem;} /*1em=16px  5em=5erm*16px*/
+  /*
+  부모요소 5em 적용. 자식요소 5rem 적용
+    - 자식요소가 em일 경우 부모요소의 em을 상속 받음.
+    - 자식요소가 rem일 경우 html의 태그를 기준으로 하기 때문에 부모요소를 상속받지 않음.
+    pxtoem 웹서칭하여 활용 사이즈 계산 해줌.
+  */
+</style>
+
+</head>
+
+<body>
+<p>
+  em단위
+  <span>rem단위</span>
+</p>  
+</body>
+</html>

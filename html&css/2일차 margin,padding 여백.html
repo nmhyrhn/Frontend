@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0;}
+      #wrap { /*id적기, #은 id라는뜻*/
+        /*id선택자 #은 한 페이지에 같은 이름 사용 안함 #으로 시작*/
+        width: 300px;
+        height: 180px;
+        background: peru;
+        margin-left: 100px;
+        margin-top: 50px;
+        padding-top: 15px;
+        box-sizing: border-box;
+      }
+      .inner { /*.은 class라는 뜻*/
+        /*class 선택자 다중사용 점(.)으로 시작*/
+        width: 250px;
+        height: 150px;
+        background: yellow;
+        margin-left: 25px;
+        text-align: center;
+        line-height: 75px;
+        padding: 30px;
+        box-sizing: border-box; /*아웃 라인 방식을 인라인 방식으로 바꿈*/
+        border: 3px solid aqua;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="wrap"> <!--wrap,wrapper,con,container 같은 이름 / 의미 없는 블럭 요소(상자)-->
+    <div class="inner">
+      내부 상자
+    </div>
+  </div>
+</body>
+</html>

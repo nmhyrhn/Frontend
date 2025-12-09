@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .menu{
+      display: inline-block;
+      padding: 10px;
+      background: red;
+    }
+
+    .menu a{
+      display: inline-block;
+      background: gold;
+      color: #333;
+      text-decoration: none;
+      padding: 10px 15px;
+      text-align: center;
+      transition: all .5s;
+    }
+
+    .menu:hover a{
+      transform: scale(0.8);
+      opacity: 0.8;
+    }
+
+    .menu:hover a:hover{
+      transform: scale(1);
+      opacity: 1;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="menu">
+    <a href="#">menu01</a>
+    <a href="#">menu02</a>
+    <a href="#">menu03</a>
+    <a href="#">menu04</a>
+    <a href="#">menu05</a>
+  </div>
+  
+</body>
+</html>

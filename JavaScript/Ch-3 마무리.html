@@ -1,0 +1,84 @@
+<script>
+  // 자, 축, 인, 묘, 진, 사, 오, 미, 신, 유, 술, 해 → tti
+  // 갑, 을, 병, 정, 무, 기, 경, 신, 임, 계 → 태어난 해
+  // 연도를 10으로 나눈 나머지가 경, 신, 임, 계, 갑 ~
+  // 이 둘을 합쳐 출력하는 프로그램 생성 
+
+  const rawwInput = prompt('태어난 해를 입력하시오.','')
+  const year = Number(rawwInput)
+
+  let 간
+    let e = year % 10
+    if      (e === 0)  { 간 = '경' }
+    else if (e === 1)  { 간 = '신' }
+    else if (e === 2)  { 간 = '임' }
+    else if (e === 3)  { 간 = '계' }
+    else if (e === 4)  { 간 = '갑' }
+    else if (e === 5)  { 간 = '을' }
+    else if (e === 6)  { 간 = '병' }
+    else if (e === 7)  { 간 = '정' }
+    else if (e === 8)  { 간 = '무' }
+    else if (e === 9)  { 간 = '기' }
+
+  let 띠
+  let tti = year % 12
+    if      (tti === 0)  { 띠 = '신' }
+    else if (tti === 1)  { 띠 = '유' }
+    else if (tti === 2)  { 띠 = '술' }
+    else if (tti === 3)  { 띠 = '해' }
+    else if (tti === 4)  { 띠 = '자' }
+    else if (tti === 5)  { 띠 = '축' }
+    else if (tti === 6)  { 띠 = '인' }
+    else if (tti === 7)  { 띠 = '묘' }
+    else if (tti === 8)  { 띠 = '진' }
+    else if (tti === 9)  { 띠 = '사' }
+    else if (tti === 10) { 띠 = '오' }
+    else if (tti === 11) { 띠 = '미' }
+
+  alert(`${year}년은 ${간}${띠} 년 입니다.`)
+</script>
+
+<script>
+  //태어난 연도를 입력받아 tti 출력하기 if조건문을 switch조건문으로 변경 구현
+  const rawInput = prompt('태어난 해를 입력해주세요.','')
+  const year1 = Number(rawInput)
+  const e1 = year1 % 12 
+
+  let result
+  switch (e1) {
+    case 0:  result = '원숭이'; break
+    case 1:  result = '닭'; break
+    case 2:  result = '개'; break
+    case 3:  result = '돼지';  break
+    case 4:  result = '쥐';  break
+    case 5:  result = '소';  break
+    case 6:  result = '호랑이'; break
+    case 7:  result = '토끼'; break
+    case 8:  result = '용'; break
+    case 9:  result = '뱀'; break
+    case 10: result = '말'; break
+    case 11: result = '양'; break
+  }
+  alert(`${year1}년에 태어났으면 ${result} 띠입니다.`)
+</script>
+
+<script>
+  const result1 = (100 > 200)
+  /*true*/ ? prompt('값을 입력해주세요.','')
+  /*false*/ : confirm('버튼을 클릭해주세요.')
+  alert(result1)
+</script>
+
+<script>
+  if(x > 10) {
+    if(x < 20) {
+      console.log('조건에 맞습니다.')
+    }
+  }
+  
+  // 하나의 조건문으로 만들기
+  
+  if(10 > x && x < 20) {
+    console.log('조건에 맞습니다.')
+  }
+  </script>

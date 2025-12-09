@@ -1,0 +1,85 @@
+<SCript>
+  function min(first, ...rests) {
+    // 변수 선언
+    let output
+    let items
+
+    // 매개변수의 자료형에 따라 조건 분기
+    if (Array.isArray(first)) {
+      output = first[0]
+      items = first
+    } else if (typeof(first) === 'number') {
+      output = first
+      items = rests
+    }
+
+    // 이전 절에서 살펴본 최소값 구하는 공식
+    for (const item of items) {
+      if (output > item) {
+        output = item
+      }
+    }
+    return output
+  }
+
+  console.log(`min(배열): ${min([52, 273, 32, 103, 275, 24, 57])}`)
+  console.log(`min(숫자, ...): ${min(52, 273, 32, 103, 275, 24, 57)}`)
+</SCript>
+
+<script>
+// 프로시저 형태의 함수
+// 1.
+  // 함수()
+  // → 함수를 호출
+  // → 함수의 본문을 실행
+
+  const f = function () {
+  // 점프 → 호출 위치에서 함수 본문으로 이동하는 것
+  console.log('안녕하세요')
+  console.log('안녕하세요')
+  console.log('안녕하세요')
+  // 함수 끝 → 원래 위치로 돌아감 = 리턴 (함수 본문에서 호출위치로 나오는 것)
+}
+
+f()
+
+// 2. 
+  const f2 = function () {
+  // 점프 → 호출 위치에서 함수 본문으로 이동하는 것
+  console.log(`안녕하세요 + ${x}`)
+  console.log(`안녕하세요 + ${x}`)
+  console.log(`안녕하세요 + ${x}`)
+  // 함수 끝 → 원래 위치로 돌아감 = 리턴 (함수 본문에서 호출위치로 나오는 것)
+}
+
+const x = 10
+f2()
+
+const sum = function(){
+  let output = 0
+  for(let i = 1; i <= limit; i++) {
+  output += i
+  }
+  console.log(output)
+}
+let limit = 10
+sum ()
+limit = 20
+sum ()
+limit = 30
+sum ()
+</script>
+
+<script>
+  // 수학적 함수
+  // f(x) = x + 5
+  // f(1) = 1 + 5 = 6
+  // f(2) = 2 + 5 = 7
+
+  const f3 = function (아무거나) {
+    return 아무거나 + 5
+  }
+  
+  console.log(f(1))
+  console.log(f(2))
+</script>

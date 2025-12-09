@@ -1,0 +1,85 @@
+<script>
+  // 변수를 선언
+  const date = new Date()
+  const hour = date.getHours()
+  
+  // if 조건문
+  if(hour < 12) {
+    // 표현식 hour < 12가 참일 때 실행
+      alert('오전입니다.');
+  }
+
+  if(hour >= 12) {
+    // 표현식hour >= 12가 참일 때 실행
+    alert('오후입니다.')
+  }
+  </script> 
+
+<script>
+  // 변수를 선언
+  const date = new Date()
+  const hour = date.getHours()
+  
+  // if 조건문
+  if(hour < 12) {
+    // 표현식 hour < 12가 참일 때 실행
+      alert('오전입니다.')
+  } else {
+    // 표현식hour < 12가 거짓일 때 실행
+    alert('오후입니다.')
+  }
+  </script> 
+
+<script>
+  // 변수를 선언
+  const date = new Date()
+  const hour = date.getHours()
+  
+  // if 조건문
+  if(hour < 12) {
+    // 표현식 hour < 12가 참일 때 실행
+      alert('오전입니다.')
+  } else {
+    // 표현식hour < 12가 거짓일 때 실행
+    alert('오후입니다.')
+  }
+  </script> 
+
+  <script>
+    // 변수 선언
+    const date = new Date()
+    const hour = date.getHours()
+
+    // 중첩 조건문
+    if(hour < 11) {
+      // 표현식 hour < 11이 참일 때 실행
+      alert('아침 먹을 시간입니다.')
+    } else {
+        // 표현식 hour < 11이 거짓일 때 실행
+        if(hour < 15) {
+          // 표현식 hour < 15가 참일 때 실행
+          alert('점심 먹을 시간입니다.')
+      } else {
+        // 표현식 hour < 15가 거짓일 때 실행
+        alert('저녁 먹을 시간입니다.')
+      } 
+    }
+  </script>
+
+  <script>
+    // 변수 선언
+    const date = new Date()
+    const hour = date.getHours()
+
+    // if else if 조건문
+    if(hour < 11) {
+      // hour < 11 참일 때 실행
+      alert('아침 먹을 시간입니다.')
+    } else if(hour < 15){
+      // hour < 11이 거짓이고, hour < 15가 참일 때 실행
+      alert('점심 먹을 시간입니다.')
+    } else {
+      // hour < 15가 거짓일 때 실행
+      alert('저녁 먹을 시간입니다.')
+    }
+  </script>

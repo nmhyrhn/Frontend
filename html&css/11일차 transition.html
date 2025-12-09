@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*
+    트랜지션: 요소를 애니메이션처럼 움직임.
+      transition-property: 속성, 트랜지션을 통해 어느 부위를 변형 시킬지 
+        all(기본값). baxkground-color, width, height ...
+      transition-duration: 숫자s, 시간은 보통s(second)
+      transition-timing-function: 속도조절: 빨라졌다 느려졌다.
+        트랜지션이 진행하는 속도를 조정함.
+          속성 liner - 등속 (처음부터 끝까지 같은 속도)
+                ease - 기본값. 느림시작-빠름실행-천천히종료
+                ease-in - 점점 빨라짐
+                ease-out - 점점 느려짐
+                ease-in-out - 느림 시작 끝
+      transition-delay: 시간s. 몇초 멈췄다가 트랜지션
+          (트랜지션 했을때 처음에 어느정도 시간 delay햇다가 움직임)
+      
+    */
+
+    .box{
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+      background: pink;
+      transition: background 2s, width 1s, height 4s;
+      /* transition: all 0.5s;  */
+      /*한번에 처리할 경우 all*/
+    }
+
+    .box:hover{
+      background: skyblue;
+      width: 200px;
+      height: 200px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <p>transition: 애니메이션 움직임</p>
+  <div class="box"></div>
+</body>
+</html>

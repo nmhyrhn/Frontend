@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃 예제</title>
+
+<style>
+header, nav, section, footer{
+  width: 900px;
+  overflow: hidden; /**/
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  /* border: 1px solid gray; */
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  
+}
+
+header, footer {
+  height: 100px;
+  line-height: 100px;
+  border: 1px solid gray;
+}
+
+div {
+  border: 1px solid gray;
+  width: 180px;
+  height: 80px;
+  line-height: 80px;
+  float: left;
+  box-sizing: border-box;
+}
+
+section{
+  border: 1px solid gray;
+  margin-bottom: 10px;
+  line-height: 400px;
+  
+}
+
+article{
+  background: skyblue;
+  width: 580px;
+  height: 400px;
+  float: left;
+  margin: 10px;
+  
+}
+
+aside{
+  background: orange;
+  width: 290px;
+  height: 400px;
+  float: left;
+  margin-top: 10px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+  <header>홈페이지 상단 부분</header>
+  <nav>
+    <div>menu01</div>
+    <div>menu02</div>
+    <div>menu03</div>
+    <div>menu04</div>
+    <div>menu05</div>
+  </nav>
+  <section>
+    <article>본문 주 내용</article>
+    <aside>본문 서브 내용</aside>
+  </section>
+  <footer>관리자 정보</footer>
+</body>
+</html>

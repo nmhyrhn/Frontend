@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* .box{
+      background: url(img/mag\ 1.jpg);
+      width: 500px;
+      height: 600px;
+      background-repeat: no-repeat;
+      transition: all 1s;
+    }
+    
+    .box:hover{
+      width: 500px;
+      height: 600px;
+      transform: scale(1.5);
+      transform: scaleX(1.3); 
+    } */
+    img{width: 200px; height: 200px;}
+    .hover-img{
+      width: 200px; height: 200px;
+      overflow: hidden;
+    }
+
+    .hover-img img{
+      transform: scale(1);
+      transition: all 0.3s;
+    }
+
+    .hover-img:hover img{
+      transform: scale(1.3);
+    }
+
+    details{cursor: pointer;}
+
+  </style>
+
+</head>
+<body>
+  <div class="hov-img">
+    <img src="img/mag 1.jpg" alt="">
+  </div>
+  <!-- <div class="box"></div> -->
+
+  <br><br>
+  <details>
+  <summary>details 제목영역:summary</summary>
+  <p>details summary를 설명하고 내용은 단락태그 &lt;p&gt;를 사용햇습니다.</p>
+</details>
+</body>
+</html>

@@ -1,0 +1,606 @@
+@charset "UTF-8";
+
+/* cdnjs - font awesome*/
+
+  /*초기화*/
+  *{margin: 0; padding: 0;}
+  ul{list-style: none;}
+  a{text-decoration: none; color: black; }
+
+  /*공통*/
+  header, nav, section, footer{
+    width: 100%;
+    margin: auto;  
+    /* background: lightskyblue; */
+  }
+  /*header*/
+  header{
+    /* width: 100%; */
+    /* overflow: hidden; */
+  }
+  header .wrap{
+    width: 1200px;
+    height: 50px;
+    margin: auto;
+    overflow: hidden;
+    /* background: red; */
+  }
+  header .wrap div{
+    float: left;
+  }
+  header .wrap div:last-child{
+    float: right;
+  }
+  header .wrap .logo{
+    width: 20%;
+    height: inherit;
+  }
+  header .wrap .logo img{
+    padding-top: 9.5px;
+  }
+  header .wrap .gnb ul{
+    overflow: hidden;
+    width: 100%;
+    /* background: blue; */
+    height: inherit;
+  }
+  header .wrap .gnb ul li{
+    float: right;
+    display: inline;
+  }
+  header .wrap .gnb ul li a{
+  display: block;
+  width: 100px;
+  float: left;
+  line-height: 50px;
+  text-align: right;
+  }
+  
+  /*nav*/
+  nav{width: 1200px;  }
+  nav div{
+    width: 500px;
+    height: 50px;
+    float: left;
+  }
+  nav div:last-child{
+    width: 200px;
+    float: right;
+  }
+
+  nav .menu{}
+  nav .menu ul{overflow: hidden;}
+  nav .menu ul li{display: inline;}
+  nav .menu ul li a{
+    display: block;
+    width: 83px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  nav .sub-menu{}
+  nav .sub-menu ul{overflow: hidden;}
+  nav .sub-menu ul li{display: inline;}
+  nav .sub-menu ul li a{
+    display: block;
+    width: 83px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  nav .icon{}
+  nav .icon ul{overflow: hidden;}
+  nav .icon ul li{display: inline;}
+  nav .icon ul li a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+  /*section*/
+  section .rolling-banner{
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    background: url(../img/rolling-banner.jpg);   
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+  section .event-banner{
+    margin: 50px auto;
+    width: 1200px;
+    height: 250px;
+  
+  }
+  section .event-banner img{
+  width: 580px;
+  height: 250px;
+  }
+
+  section .event-banner li{
+    display: inline;
+  }
+
+  section .event-banner li:last-child img{
+    float: right;
+  }
+  
+  section .md{
+    width: 1200px;
+    margin: auto;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+  
+  section .md .md1{
+    width: 600px;
+    height: 600px;
+    float: left;
+  }
+  
+  section .md .md1 h2{
+    padding-bottom: 10px;
+  }
+  
+  section .md .md1 img{
+    width: 600px;
+    height: 561.33px;
+  }
+  
+  section .md .md2{
+    overflow: hidden;
+    padding-left: 30px;
+    font-size: 1.4em;
+  }
+  section .md .md2 h4{
+    margin-bottom: 20px;
+    font-weight: normal;
+  }
+  section .md .md2 h3{
+    margin-bottom: 30px;
+  }
+  section .md .md2 ul{}
+  section .md .md2 ul li{
+    float: left;
+    padding-right: 10px;
+  }
+
+  section .md .md2 ul li p{
+    margin-top: 10px;
+  font-weight: bold;
+  }
+
+  section .md .md2 ul li:last-child{
+    padding: 0;
+  }
+
+  section .md .md2 ul li img{
+    width: 280px;
+    height: 340px;
+  }
+
+  section .cus-wrap{
+    width: 100%;
+    background: lightgray;
+    overflow: hidden;
+  }
+
+  section .customer{
+    width: 1200px;
+    margin: auto;
+  }
+  
+  section .customer h2{
+    letter-spacing: 1px;
+    margin:30px 0;
+  }
+  
+  section .customer ul{
+    overflow: hidden;
+    padding-bottom: 30px;
+  }
+  section .customer ul li{
+    width: 285px;
+    height: 450px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  section .customer ul li:last-child{
+    margin: o;
+  }
+
+  section .customer ul li img{
+    width: 285px;
+    height: 350px;
+  }
+
+  section .customer ul li:nth-child(2n-1){
+    margin-top: 40px;
+  }
+
+  section .customer ul li:first-child img{
+    border-top-left-radius: 30%;
+  }
+  
+  section .customer ul li:last-child img{
+    border-bottom-right-radius: 30%;
+  }
+
+  section .spe-wrap{
+    margin-top: 20px;
+  }
+
+  section .special{
+    clear: both;
+    width: 1200px;
+    margin: auto;
+  }
+
+  section .special div{
+    float: left;
+  }
+
+  section .special h2{
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+  section .special .box1{
+    overflow: hidden;
+    width: 600px;
+  }
+
+  section .special .box1 h2{
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  
+  section .special .box1 img{
+    width: 580px;
+    height: 650px;
+    padding: 10px;
+  }
+
+  section .special .box1 ul{}
+  section .special .box1 ul li{
+    width: 580px;
+    height: 100px;
+    padding-left: 10px;
+  }
+  section .special .box1 ul li img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    float: left;
+    margin-right: 20px;
+  }
+  
+  section .special .box1 ul li p{
+    padding-top: 30px;
+  }
+
+  section .special .box2{
+    overflow: hidden;
+    width: 600px;
+  }
+
+  section .special .box2 h2{
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  section .special .box2 img{
+    width: 580px;
+    height: 650px;
+    padding: 10px;
+  }
+
+  section .special .box2 ul{}
+  section .special .box2 ul li{
+    width: 580px;
+    height: 100px;
+    padding-left: 10px;
+  }
+  section .special .box2 ul li img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    float: left;
+    margin-right: 20px;
+  }
+  
+  section .special .box2 h2{
+    padding-left: 10px;
+  }
+
+  section .special .box2 ul li p{
+    padding-top: 30px;
+  }
+
+  section .new-wrap{
+    width: 100%;
+    background: lightgray;
+    overflow: hidden;
+  }
+
+  section .new-product{
+    width: 1200px;
+    margin: auto;
+  }
+  
+
+  section .new-product h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  section .category{
+    overflow: hidden;
+  }
+  section .category ul{
+    width: 1200px;
+    height: 50px;
+    float: left;
+    border-bottom: 1px solid gray;
+  }
+  section .category ul li{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+  }
+  section .new-wrap .category ul li a{}
+
+  section .new-wrap .new-img{
+    margin-top: 20px;
+  }
+  
+  section .new-img{
+    width: 1200px;
+  }
+
+  section .new-img ul{
+    overflow: hidden;
+    padding-top: 30px;
+  }
+  
+  section .new-img ul li{
+    width: 285px;
+    height: 450px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  section .new-img ul li:last-child{
+    margin: 0;
+  }
+
+  section .new-img ul li img{
+    width: 285px;
+    height: 350px;
+  }
+
+  section .new-img ul li:nth-child(2n-1){
+    margin-top: 40px;
+  }
+
+  section .new-img ul li p{
+    margin-top: 10px;
+  }
+
+  section .new-img ul li:first-child img{
+    border-top-left-radius: 30%;
+  }
+
+  section .new-img ul li:last-child img{
+    border-bottom-right-radius: 30%;
+  }
+
+  section .new-banner{
+    width: 1200px;
+    margin: auto;
+    clear: both;
+  }
+  
+  section .new-banner ul{
+    overflow: hidden;
+    margin-top: 50px;
+  }
+  section .new-banner ul li{
+    width: 600px;
+    height: 450px;
+    float: left;
+  }
+
+  section .new-banner ul li img{
+    width: 595px;
+    height: 450px;
+  }
+
+
+  section .new-banner ul li:last-child img{
+    float: right;
+  }
+
+  section .mag-wrap{
+    width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+  }
+  section .magazine{}
+  section .magazine h2{
+    margin-bottom: 20px;
+  }
+
+  section .mag-box, section .mag-box2, section .mag-box3{
+    width: 400px;
+    float: left;
+  }
+  section .mag-box ul, section .mag-box2 ul, section .mag-box3 ul{
+    overflow: hidden;
+    padding-top: 30px;
+    background: saddlebrown;
+  }
+  
+  section .mag-box img, section .mag-box2 img, section .mag-box3 img{
+    width: 370px;
+    height: 485px;
+    float: left;
+  }
+
+  section .mag-box .mag-item{
+    width: 370px;
+    height: 150px;
+    border-top-left-radius: 50px;
+    clear: both;
+    background: #fff;
+    position: absolute;
+    top: 450px;
+  }
+
+  section .mag-box2 .mag-item{
+    width: 370px;
+    height: 150px;
+    border-top-left-radius: 50px;
+    clear: both;
+    background: #fff;
+    position: absolute;
+    top: 450px;
+    left: 400px;
+  }
+
+  section .mag-box3 .mag-item{
+    width: 370px;
+    height: 150px;
+    border-top-left-radius: 50px;
+    clear: both;
+    background: #fff;
+    position: absolute;
+    top: 450px;
+    left: 800px;
+  }
+
+  section .mag-box .mag-item p, section .mag-box2 .mag-item p, section .mag-box3 .mag-item p{
+    font-size: 0.8em;
+    width:200px ;
+    height: 150px;
+    padding-top: 60px;
+    float: right;
+    box-sizing: border-box;
+  }
+
+  section .mag-box .mag-item img,section .mag-box2 .mag-item img, section .mag-box3 .mag-item img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  section .best-pro{
+    width: 1200px;
+    margin: auto;
+    clear: both;
+  }
+
+  section .best-pro h2{
+    margin: 30px 0;
+    background: firebrick;
+    display: none;
+  }
+
+  section .best-pro hr{
+    width: 1200px;
+  }
+
+  section .best-pro ul{
+    width: 1200px;
+    height: 50px;
+  }
+  section .best-pro ul li{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+  }
+
+  section .best-img{
+    width: 1200px;
+    margin: auto;
+  }
+
+  section .best-img ul{
+    width: 1200px;
+    overflow: hidden;
+  }
+  section .best-img ul li{
+    width: 220px;
+    height: 350px;
+    float: left;
+  }
+
+  section .best-img ul li img{
+    width: 220px;
+    height: 250px;
+    background: #fff;
+  }
+
+  section .best-img ul li img:hover{
+    opacity: 0.8;
+  }
+
+  
+  section .best-img ul li:nth-child(2n){
+    margin: 0 25px;
+  }
+
+  section .best-pro-img{
+    margin-bottom: 20px;
+  }
+
+  footer{
+    width: 100%;
+    background: black;
+    margin-top: 80px;
+  }
+  
+  footer h2{
+    width: 1200px;
+    margin: auto;
+    padding: 30px 0 ;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+
+  footer .footer-menu{
+    width: 1200px;
+    margin: auto;
+  }
+  footer .footer-menu ul{
+    width: 1200px;
+    overflow: hidden;
+  }
+  footer .footer-menu ul li{
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    text-align: left;
+    margin-right: 20px;
+  }
+  
+  footer .footer-menu ul li a{
+    color: #fff;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+  }
+
