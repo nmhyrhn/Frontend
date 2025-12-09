@@ -1,0 +1,286 @@
+@charset "utf-8";
+
+*{
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  font-family: "맑은 고딕";
+  color: #666;
+}
+html,body{
+  min-width: 1340px;
+  background-color: #fff;
+  font-size: 20px;
+}
+a{
+  text-decoration: none;
+  display: block;
+}
+header{
+  width: 1340px;
+  height: 100px;
+}
+.wrap{
+  width: 1340px;
+  height: 100%;
+}
+.logo{
+  float: left;
+  width: 240px;
+  height: 100px;
+}
+.logo img{
+  float: left;
+  height: 80px;
+  margin: 10px 15px;
+}
+.menu{
+  float: right;
+  width: 800px;
+  height: 100px;
+  z-index: 1;
+}
+.navi{
+  float: right;
+  margin-right: 0;
+  margin-top: 50px;
+}
+.navi>li{
+  float: left;
+}
+.navi>li>a{
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #eee;
+}
+.navi>li>a:hover{
+  background-color: #333;
+  color: #fff;
+}
+.submenu{
+  width: 200px;
+  z-index: 3;
+  position: absolute;
+  display: none;
+  opacity: 0.8;
+}
+.submenu>li>a{
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  background-color: #ddd;
+}
+.submenu>li>a:hover{
+  background-color: #333;
+  color: #fff;
+}
+.imgslide{
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+.imgslide img{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.imgslide span{
+  width: 450px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(40,40,40,0.5);
+  top: 30%;
+  left: 40%;
+  position: absolute;
+}
+.contents{
+  width: 1340px;
+  height: 550px;
+  position: relative;
+  margin-top: -100px;
+}
+.shortcut{
+  float: left;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: #abdde6;
+}
+.shortcut img{
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+}
+.banner{
+  float: left;
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+.banner img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.banner span{
+  float: left;
+  width: 96%;
+  height: 80px;
+  margin-top: 20px;
+  padding-top: 30px;
+  left: 2%;
+  font-size: 16px;
+  text-align: center;
+  position: absolute;
+  background-color: rgba(40,40,40,0.5);
+  color: #fff;
+}
+.banner span h4{
+  font-size: 18px;
+  color: #fff;
+}
+.tabmenu{
+  float: left;
+  width: 100%;
+  height: 300px;
+}
+.tabmenu>ul{
+  padding-top: 20px;
+}
+.tabmenu>ul>li{
+  float: left;
+  width: 100px;
+  line-height: 45px;
+}
+.tabmenu>ul>li>a{
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: #ccc;
+  border-bottom: none;
+}
+.tabmenu>ul>li>a:hover{
+  background-color: #eee;
+}
+.tabmenu>ul>li:first-child a{
+  border-right: none;
+}
+.tabmenu>ul>li.active>a{
+  background-color: #fff;
+}
+.tabmenu>ul>li div{
+  position: absolute;
+  left: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+.tabmenu>ul>li.active div{
+  height: 210px;
+  width: 570px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+.notice ul{
+  float: left;
+  width: 550px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.notice li{
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.notice li:nth-child(2n){
+  background-color: #eee;
+}
+.notice span{
+  float: right;
+}
+.notice li:hover{
+  font-weight: bold;
+}
+.gallery ul{
+  display: flex;
+  justify-content: flex-start;
+}
+.gallery li{
+  float: left;
+  width: 150px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 25px;
+}
+.gallery img{
+  width: 140px;
+  height: 140px;
+  padding: 5px;
+}
+.gallery li:hover{
+  opacity: 0.5;
+}
+.gallery span{
+  font-size: 16px;
+}
+footer{
+  width: 1340px;
+  height: 120px;
+  background-color: #ddd;
+}
+.btlogo{
+  float: left;
+  width: 240px;
+  height: 120px;
+}
+.btlogo img{
+  float: left;
+  width: 130px;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+.btwrap{
+  float: right;
+  width: 1100px;
+  height: 100%;
+  font-size: 16px;
+  line-height: 50px;
+}
+.btmenu{
+  float: right;
+  width: 1100px;
+  height: 50px;
+  margin-top: 10px;
+}
+.btmenu li{
+  display: inline;
+}
+.btmenu li:hover{
+  opacity: 0.5;
+}
+.btmenu a{
+  display: inline;
+}
+.btmenu li::after{
+  content: "|";
+}
+.btmenu li:last-child::after{
+  content: "";
+}
