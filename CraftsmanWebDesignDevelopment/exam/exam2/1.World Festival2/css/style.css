@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+*{
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  font-family: "맑은 고딕";
+  color: #333;
+}
+body{
+  width: 1000px;
+  height: 650px;
+  font-size: 20px;
+  background: #fff;
+}
+a{
+  text-decoration: none;
+  display: block;
+}
+header{
+  float: left;
+  width: 200px;
+}
+.top{
+  float: left;
+  width: 200px;
+  height: 650px;
+  background-color: ivory;
+}
+.logo{
+  float: left;
+  width: 200px;
+  height: 100px;
+}
+.logo img{
+  width: 180px;
+  height: 80px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.menu{
+  float: left;
+  width: 180px;
+  margin-left: 10px;
+  position: relative;
+  margin-top: 10px;
+}
+.navi>li{
+  width: 190px;
+  height: 50px;
+}
+.navi>li>a{
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.navi>li>a:hover{
+  background-color: #fff;
+  color: #333;
+}
+.submenu{
+  width: 180px;
+  position: absolute;
+  z-index: 1;
+  display: none;
+  left: 190px;
+  top: 0px;
+}
+.submenu li{
+  width: 180px;
+  height: 50px;
+}
+.submenu li a{
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #eee;
+  color: #333;
+}
+.submenu li a:hover{
+  background-color: #ddd;
+}
+.imgslide{
+  float: right;
+  width: 800px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+.imgslide>a{
+  display: block;
+}
+.imgslide img{
+  width: 800px;
+  height: 350px;
+}
+.imgslide span{
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(40,40,40,0.5);
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  left: 200px;
+}
+.contents{
+  float: right;
+  width: 800px;
+  height: 200px;
+}
+.notice{
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+.tab{
+  width: 300px;
+  float: left;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.notice li{
+  float: left;
+  width: 290px;
+  height: 40px;
+  margin-left: 5px;
+}
+.notice li a{
+  width: 290px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+.notice span{
+  float: right;
+}
+.notice li:nth-child(2n){
+  background-color: #eee;
+}
+.gallery{
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+.gallery img{
+  float: left;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+}
+.gallery img:hover{
+  opacity: 0.5;
+}
+.shortcut{
+  float: right;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.shortcut img{
+  width: 180px;
+  height: 180px;
+  margin: 10px;
+}
+.shortcut span{
+  width: 80px;
+  height: 50px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  background-color: rgba(40,40,40,0.5);
+  color: #fff;
+  top: 75px;
+  right: 60px;
+  position: absolute;
+  font-size: 18px;
+}
+.shortcut img:hover{
+  opacity: 0.5;
+}
+#modal{
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+  display: none;
+}
+#modal.active{
+  display: block;
+}
+.modal_up{
+  position: fixed;
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  top: 30%;
+  left: 40%;
+  text-align: center;
+}
+.uptitle{
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.upbody{
+  padding: 20px;
+  font-size: 16px;
+  line-height: 30px;
+}
+.btn{
+  width: 80px;
+  height: 40px;
+  background-color: #eee;
+  font-weight: bold;
+  right: 10px;
+  bottom: 10px;
+  line-height: 40px;
+  position: absolute;
+}
+footer{
+  float: right;
+  width: 800px;
+  height: 100px;
+  background-color: bisque;
+}
+.btlogo{
+  float: left;
+  width: 200px;
+  height: 100px;
+}
+.btlogo img{
+  width: 160px;
+  height: 60px;
+  margin: 20px;
+}
+.copy{
+  float: left;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 14px;
+}
+.familysite{
+  float: right;
+  width: 200px;
+  height: 100px;
+}
+.familysite select{
+  float: right;
+  width: 190px;
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 10px;
+}

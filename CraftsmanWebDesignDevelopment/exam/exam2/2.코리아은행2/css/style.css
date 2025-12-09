@@ -1,0 +1,340 @@
+@charset "utf-8";
+
+*{
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  font-family: "맑은 고딕";
+  color: #333;
+}
+html,body{
+  min-width: 1200px;
+  background-color: #fff;
+  font-size: 20px;
+}
+a{
+  text-decoration: none;
+  display: block;
+}
+header{
+  width: 100%;
+  height: 100px;
+  background: #ddd;
+}
+.wrap{
+  width: 1200px;
+}
+.logo{
+  float: left;
+  width: 250px;
+  height: 100px;
+}
+.logo img{
+  width: 230px;
+  height: 80px;
+  margin: 10px;
+}
+.menu{
+  float: right;
+  width: 800px;
+  height: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.navi>li{
+  float: left;
+  width: 200px;
+  height: 50px;
+}
+.navi>li>a{
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+}
+.navi>li>a:hover{
+  background-color: #dec;
+  color: #333;
+}
+.submenu{
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+.submenu>li>a{
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #999;
+  color: #fff;
+}
+.submenu>li>a:hover{
+  background-color: #ded;
+  color: #333;
+}
+.bodywrap{
+  width: 1200px;
+  height: 500px;
+}
+.imgslide{  
+  width: 1200px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.slidelist{
+  width: 3600px;
+}
+.slidelist ul li{
+  width: 1200px;
+  float: left;
+  position: relative;
+}
+.slidelist span{
+  position: absolute;
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgba(40,40,40,0.5);
+  color: #fff;
+  top: 125px;
+  left: 400px;
+}
+.contents{
+  float: left;
+  width: 1200px;
+  height: 200px;
+  position: absolute;
+}
+.tabmenu{
+  float: left;
+  width: 400px;
+  height: 180px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.tabmenu>li{
+  float: left;
+  width: 100px;
+  line-height: 30px;
+}
+.tabmenu>li>a{
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  background-color: #ccc;
+  border: 1px solid #ddd;
+  border-bottom: none;
+}
+.tabmenu>li>a:hover{
+  background-color: #eee;
+}
+.tabmenu>li:first-child a{
+  border-right: none;
+}
+.tabmenu>li.active a{
+  background-color: #fff;
+}
+.tabmenu>li div{
+  position: absolute;
+  left: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+.tabmenu>li.active div{
+  width: 390px;
+  height: 150px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+.notice ul{
+  float: left;
+  width: 390px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.notice li{
+  line-height: 32px;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.notice li:nth-child(2n){
+  background-color: #eee;
+}
+.notice span{
+  float: right;
+}
+.notice li:hover{
+  font-weight: bold;
+}
+.gallery li{
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.gallery img{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+.gallery img:hover{
+  opacity: 0.5;
+}
+.otherwrap{
+  float: right;
+  width: 800px;
+  height: 200px;
+}
+.banner{
+  float: left;
+  width: 400px;
+  height: 200px;
+  position: relative;
+}
+.banner img{
+  width: 380px;
+  height: 180px;
+  margin: 10px;
+}
+.banner span{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  background-color: rgba(40,40,40,0.5);
+  color: #fff;
+  top: 65px;
+  left: 140px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: bold;
+}
+.banner img:hover{
+  opacity: 0.5;
+}
+.shortcut{
+  float: right;
+  width: 400px;
+  height: 200px;
+  position: relative;
+}
+.shortcut img{
+  width: 380px;
+  height: 180px;
+  margin: 10px;
+}
+.shortcut span{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  background-color: rgba(40,40,40,0.5);
+  color: #fff;
+  top: 65px;
+  left: 140px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: bold;
+}
+.shortcut img:hover{
+  opacity: 0.5;
+}
+#layer{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.3);
+  display: none;
+  z-index: 1;
+}
+#layer.active{
+  display: block;
+}
+.layer_up{
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  top: 30%;
+  left: 40%;
+  position: fixed;
+}
+.uptitle{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.upbody{
+  padding: 10px;
+  font-size: 16px;
+  line-height: 30px;
+}
+.btn{
+  width: 80px;
+  height: 40px;
+  font-size: 14px;
+  background-color: #eee;
+  text-align: center;
+  line-height: 40px;
+  right: 10px;
+  bottom: 10px;
+  position: absolute;
+  font-weight: bold;
+}
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: #ddd;
+}
+.btlogo{
+  float: left;
+  width: 250px;
+  height: 100px;
+}
+.btlogo img{
+  width: 230px;
+  height: 80px;
+  margin: 10px;
+}
+.site{
+  float: right;
+  width: 600px;
+  height: 100px;
+  text-align: center;
+  font-size: 16px;
+}
+.btmenu{
+  width: 600px;
+  height: 50px;
+}
+.btmenu a{
+  float: left;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+}
+.btmenu a:first-child{
+  margin-left: 150px;
+}
+.copy{
+  width: 600px;
+  height: 50px;
+  line-height: 50px;
+}
