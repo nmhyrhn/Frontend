@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+*{
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  font-family: "맑은 고딕";
+  color: #333;
+}
+body{
+  width: 1000px;
+  height: 650px;
+  background-color: #fff;
+  font-size: 20px;
+}
+a{
+  text-decoration: none;
+  display: block;
+}
+.top{
+  float: left;
+  width: 200px;
+  height: 650px;
+  background-color: #eee;
+  position: relative;
+}
+.logo{
+  float: left;
+  width: 200px;
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.menu{
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  text-align: center;
+  z-index: 1;
+}
+.navi>li{
+  float: left;
+  width: 180px;
+}
+.navi>li>a{
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+}
+.navi>li>a:hover{
+  background-color: #ccc;
+  color: #000;
+}
+.submenu{
+  float: left;
+  width: 180px;
+  height: 250px;
+  left: 180px;
+  top: -20px;
+  position: absolute;
+  background-color: #999;
+  display: none;
+  z-index: 1;
+}
+.submenu>li>a{
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #999;
+  color: #333;
+}
+.submenu>li>a:hover{
+  background-color: #ccc;
+  color: #ff0;
+}
+.imgslide{
+  float:right;
+  width: 800px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+.slidelist{
+  width: 2400px;
+}
+.slidelist ul li{
+  width: 800px;
+  float: left;
+}
+.slidelist span{
+  width: 450px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  background-color: rgba(40,40,40,0.5);
+  color: #fff;
+  margin-top: 150px;
+  margin-left: 200px;
+}
+.contents{
+  float: right;
+  width: 800px;
+  height: 200px;
+}
+.notice{
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+.tab{
+  float: left;
+  width: 300px;
+}
+.notice h4{
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 10px;
+}
+.notice ul{
+  float: left;
+  width: 290px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.notice span{
+  float: right;
+}
+.notice li:nth-child(2n){
+  background-color: #ccc;
+}
+.notice li:hover{
+  font-weight: bold;
+}
+.gallery{
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+.gallery h4{
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 10px;
+}
+.gallery ul li{
+  float: left;
+  margin-top: 35px;
+  margin-left: 20px;
+}
+.gallery img{
+  width: 80px;
+  height: 80px;
+}
+.gallery img:hover{
+  opacity: 0.5;
+}
+.shortcut{
+  float: right;
+  width: 200px;
+  height: 200px;
+}
+.shortcut img{
+  float: right;
+  width: 180px;
+  height: 180px;
+  margin-top: 10px;
+}
+.sctext{
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  background-color: rgba(40,40,40,0.5);
+  color: #fff;
+  margin-top: 85px;
+  margin-left: 50px;
+}
+.shortcut img:hover{
+  opacity: 0.5;
+}
+#modal{
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+#modal.active{
+  display: block;
+}
+.modal_up{
+  width: 400px;
+  height: 300px;
+  position: fixed;
+  left: 30%;
+  top: 40%;
+  background-color: #fff;
+}
+.uptitle{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.upbody{
+  padding: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+.btn{
+  width: 80px;
+  height: 20px;
+  display: block;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  background-color: #999;
+}
+footer{
+  float: right;
+  width: 800px;
+  height: 100px;
+  background-color: antiquewhite;
+}
+.btlogo{
+  float: left;
+  width: 200px;
+  height: 100px;
+}
+.btlogo img{
+  float: left;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.site{
+  float: right;
+  width: 600px;
+  height: 100px;
+}
+.btmenu{
+  float: left;
+  width: 600px;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+}
+.btmenu li{
+  margin-top: 10px;
+  display: inline-block;
+  width: 100px;
+}
+.copy{
+  float: left;
+  width: 600px;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+}

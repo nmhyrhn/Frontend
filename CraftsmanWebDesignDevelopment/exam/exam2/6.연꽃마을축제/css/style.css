@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+*{
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  font-family: "맑은 고딕";
+  color: #222328;
+}
+body{
+  width: 1000px;
+  font-size: 20px;
+  background-color: #fff;
+}
+a{
+  text-decoration: none;
+  display: block;
+}
+header{
+  float: left;
+}
+.wrap{
+  float: left;
+  width: 200px;
+  height: 650px;
+}
+.logo{
+  float: left;
+  width: 200px;
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.menu{
+	width:180px;
+	top:100px;
+	text-align:center;
+}
+.navi>li{
+	float:left;
+	width:180px;
+}
+.navi>li>a{
+	height:40px; 
+	width:180px; 
+	line-height:40px; 
+	font-size:16px;
+	font-weight:bold;
+	background-color:#222328;
+	color:#ffffff; 
+}
+.navi>li>a:hover{
+	background-color:#930930;
+	color:#ffff00; 
+}
+.submenu{
+	/* float:left; */
+	width:100%;
+	display:none;
+}
+.submenu>li>a{
+	height:40px;
+	width:180px;
+	line-height:40px;
+	font-size:14px;
+	font-weight:bold;
+	background-color:#cccccc;
+	color:#ffffff;
+}
+.submenu>li>a:hover{
+	background-color:#999999;
+	color: #ffff00;
+}
+.imgslide{
+  float: right;
+  height: 350px;
+  width: 800px;
+  position: relative;
+}
+.imgslide>a{
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.imgslide span{
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  background-color: rgba(40,40,40,0.5);
+  color: #fff;
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  text-align: center;
+}
+.contents{
+  float: right;
+  width: 800px;
+  height: 200px;
+}
+.notice{
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+.tab{
+  float: left;
+  width: 300px;
+}
+.tab h4{
+  float: left;
+  height: 30px;
+  width: 80px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgba(30,30,30,0.5);
+}
+.notice>div{
+  width: 280px;
+  border-bottom: 1px solid #ccc;
+}
+.notice ul{
+  float: left;
+  height: 30px;
+  width: 280px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.notice span{
+  float: right;
+}
+.notice li:nth-child(2n){
+  background-color: #eee;
+}
+.notice li:hover{
+  font-weight: bold;
+}
+.gallery{
+  float: left;
+  width: 300px;
+  height: 190px;
+}
+.gallery>div{
+  width: 280px;
+  border-bottom: 1px solid #ccc;
+}
+.gallery ul li{
+  float: left;
+  padding: 10px;
+  margin-top: 10px;
+}
+.gallery img{
+  width: 75px;
+  height: 90px;
+}
+.gallery li:hover{
+  opacity: 0.5;
+}
+.shortcut{
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+.shortcut img{
+  float: right;
+  width: 180px;
+  height: 180px;
+  margin-top: 10px;
+}
+.sctext{
+  position: absolute;
+  float: right;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  background-color: rgba(40,40,40,0.5);
+  color: #fff;
+  margin-top: 80px;
+  margin-left: 60px;
+}
+#modal{
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(0,0,0,0.5);
+}
+#modal.active{
+  display: block;
+}
+.modal_up{
+  width: 400px;
+  height: 300px;
+  position: fixed;
+  left: 40%;
+  top: 40%;
+  background-color: #fff;
+}
+.uptitle{
+  margin-top: 20px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.upbody{
+  padding: 30px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 40px;
+}
+.btn{
+  width: 80px;
+  height: 20px;
+  right: 10px;
+  bottom: 10px;
+  background-color: #eee;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+  font-size: 16px;
+}
+footer{
+  float: right;
+  background-color: #eee;
+}
+.sctext:hover{
+  opacity: 0.5;
+}
+.btwrap{
+  float: left;
+  width: 800px;
+  height: 100px;
+}
+.copy{
+  float: left;
+  height: 100px;
+  width: 600px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100px;
+}
+.site{
+  float: right;
+  width: 200px;
+  height: 100px;
+}
+.sns{
+  float: left;
+  width: 200px;
+  height: 50px;
+  margin-left: 10px;
+}
+.sns img{
+  float: left;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+.famliysite{
+  float: left;
+  width: 200px;
+  height: 50px;
+}
+.famliysite select{
+  width: 180px;
+  height: 30px;
+  right: 10px;
+}
