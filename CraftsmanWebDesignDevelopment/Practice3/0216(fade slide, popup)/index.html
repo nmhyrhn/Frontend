@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fade slider,팝업</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-1.12.4.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header"></div><!-- header end -->
+        <div id="visual">
+            <div class="banner">
+                <div class="slideList">
+                    <div class="slideImg">
+                        <h2>배경이미지1</h2>
+                        <img src="img/img_1.jpg" alt="배경1">
+                    </div>
+                    <div class="slideImg">
+                        <h2>배경이미지2</h2>
+                        <img src="img/img_2.jpg" alt="배경2">
+                    </div>
+                    <div class="slideImg">
+                        <h2>배경이미지3</h2>
+                        <img src="img/img_3.jpg" alt="배경3">
+                    </div>
+                </div>
+            </div>
+        </div><!-- visual end -->
+        <div id="container">
+            <div class="cont1">콘텐츠1
+                <a href="#" class="pop">팝업입니다</a>
+            </div>
+            <div class="cont2">콘텐츠2</div>
+            <div class="cont3">콘텐츠3</div>
+        </div><!-- container end -->
+        <div id="footer"></div><!-- footer end -->
+    </div>
+    <!-- 팝업박스는 wrap박스 밖에다 만든다 -->
+    <div id="popup">
+        <h1 class="tit">이벤트</h1>
+        <p>내용입니다<br>Lorem ipsum dolor sit<br> amet consectetur adipisicing elit. Ipsa<br> perspiciatis praesentium laborum velit cumque<br> facere doloribus  labore voluptatem corrupti, eius<br>s non aut quae. Recusandae, veritatis.<br> Consequuntur aliquam et tempore laborum.</p>
+        <a href="#" class="close">닫기</a>
+    </div>
+</body>
+</html>
