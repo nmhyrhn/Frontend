@@ -1,0 +1,293 @@
+@charset "utf-8";
+
+*{
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  font-family: "맑은 고딕";
+  color: #222328;
+}
+body{
+  width: 1000px;
+  background-color: #fff;
+  font-size: 20px;
+}
+a{
+  text-decoration: none;
+  display: block;
+}
+.wrap{
+  float: left;
+  width: 200px;
+  height: 650px;
+}
+.logo{
+  float: left;
+  width: 200px;
+}
+.logo img{
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.menu{
+  float: left;
+  width: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navi{
+  float: left;
+  width: 180px;
+}
+.navi>li{
+  float: left;
+  z-index: 1;
+}
+.navi>li>a{
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: #222328;
+  background-color: #eee;
+  
+}
+.navi>li>a:hover{
+  background-color: firebrick;
+  color: #fff;
+}
+.submenu{
+  float: left;
+  width: 180px;
+}
+.submenu>li{
+  float: left;
+  width: 180px;
+  display: none;
+}
+.submenu>li>a{
+  float: left;
+  width: 180px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  background-color: #333;
+}
+.submenu>li>a:hover{
+  background-color: darkblue;
+  color: #fff;
+}
+.imgslide{
+  float: right;
+  width: 800px;
+  height: 350px;
+  position: relative;
+}
+.imgslide>a{
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.imgtext{
+	height:50px;
+  width:300px;
+  position:absolute;
+  margin: -25px 0 0 -150px;
+  text-align:center;
+	color:#ffffff;
+	font-weight: bold;
+  line-height:50px;
+  background-color:rgba(40,40,40,0.3);
+  left:50%;
+  top:50%; 
+}
+.contents{
+  float: right;
+  width: 800px;
+  height: 200px;
+}
+.notice{
+  float: left;
+  width: 300px;
+  height: 190px;
+  margin-top: 10px;
+}
+.tab{
+  float: left;
+  width: 300px;
+}
+.tab h4{
+  float: left;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  background-color: #eee;
+}
+.notice>div{
+  width: 300px;
+  border-bottom-color: #ccc;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.notice ul{
+  float: left;
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.notice li span{
+  float: right;
+}
+.notice li:nth-child(2n){
+  background-color: #ccc;
+}
+.notice li:hover{
+  font-weight: bold;
+}
+.gallery{
+  float: left;
+  width: 280px;
+  height: 190px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.gallery>div{
+  width:280px;
+  border-bottom-color: #ccc;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.gallery ul li{
+float: left;
+padding: 10px;
+margin-top: 10px;
+}
+.gallery img{
+  height: 90px;
+  width: 73px;
+}
+.gallery li:hover{
+	opacity:0.5;
+}
+.shortcut{
+  float: right;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.sctext{
+  float: right;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+  background-color: rgba(40,40,40,0.6);
+  color: #fff;
+  top: 85px;
+  right: 40px;
+}
+.shortcut img{
+  float: right;
+  width: 180px;
+  height: 180px;
+  padding: 10px 0 10px;
+}
+#modal{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+  display: none;
+}
+#modal.active{
+  display: block;
+}
+.modal-up{
+  width: 400px;
+  height: 300px;
+  position: fixed;
+  left: 40%;
+  top: 40%;
+  background-color: #fff;
+}
+.uptilte{
+  margin-top: 20px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.upbody{
+  padding: 30px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 40px;
+}
+.btn{
+  height: 20px;
+  width: 80px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #ccc;
+  position: absolute;
+  text-align: center;
+  right: 10px;
+  bottom: 10px;
+}
+footer{
+  float: right;
+  width: 800px;
+  height: 100px;
+  background-color: rgba(40,40,40,0.1);
+}
+.copy{
+  float: left;
+  width: 650px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.site{
+  float: right;
+  width: 150px;
+  height: 100px;
+}
+.sns{
+  float: right;
+  width: 150px;
+  height: 50px;
+}
+.sns img{
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+.sns img:hover{
+  opacity: 0.5;
+}
+.familysite{
+  float: right;
+  width: 150px;
+  height: 50px;
+}
+.familysite select{
+  float: right;
+  width: 130px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 13px;
+}
